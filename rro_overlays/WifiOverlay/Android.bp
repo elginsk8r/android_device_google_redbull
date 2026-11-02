@@ -3,8 +3,8 @@ package {
 }
 
 runtime_resource_overlay {
-    name: "WifiOverlay",
-    theme: "WifiOverlay",
+    name: "WifiOverlayRedbull",
+    theme: "WifiOverlayRedbull",
     sdk_version: "current",
     product_specific: true
 }

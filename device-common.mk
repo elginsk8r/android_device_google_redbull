@@ -76,7 +76,11 @@ PRODUCT_CHARACTERISTICS := nosdcard
 PRODUCT_SHIPPING_API_LEVEL := 30
 BOARD_SHIPPING_API_LEVEL := 30
 
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+# Overlays
+PRODUCT_PACKAGES += \
+    FrameworkResOverlayVendorRedbull \
+    SettingsOverlayRedbull \
+    TelephonyOverlayRedbull
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/fstab.hardware:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.$(PRODUCT_PLATFORM) \
@@ -409,11 +413,11 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
     wificond \
     libwpa_client \
-    WifiOverlay
+    WifiOverlayRedbull
 
 # Connectivity
 PRODUCT_PACKAGES += \
-    ConnectivityOverlay
+    ConnectivityOverlayRedbull
 
 # WLAN driver configuration files
 PRODUCT_COPY_FILES += \

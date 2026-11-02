@@ -5,10 +5,14 @@
 #
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
-
 PRODUCT_PACKAGES += \
-    ApertureOverlayRedbull
+    ApertureOverlayRedbull \
+    FrameworkResOverlayLineageRedbull \
+    SettingsOverlayLineageRedbull \
+    SettingsProviderOverlayRedbull \
+    SimpleDeviceConfigOverlayRedbull \
+    SystemUIOverlayRedbull \
+    TelephonyOverlayLineageRedbull
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
