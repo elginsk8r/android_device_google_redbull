@@ -92,6 +92,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/ueventd.rc \
 		$(LOCAL_PATH)/init.ramoops.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.ramoops.sh
 
+# Recovery
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init/init.recovery.device.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.$(PRODUCT_HARDWARE).rc
 
 MSM_VIDC_TARGET_LIST := lito # Get the color format from kernel headers
 MASTER_SIDE_CP_TARGET_LIST := lito # ION specific settings
